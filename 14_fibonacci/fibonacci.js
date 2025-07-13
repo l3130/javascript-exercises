@@ -1,6 +1,8 @@
 const fibonacci = function(n) {
-    if (n < 0) {
-        throw new Error("Input cannot be a negative number");
+    n = Number(n);
+    
+    if (isNaN(n)|| n < 0) {
+        return "OOPS";  
     }
     if (n === 0) {
         return 0;
